@@ -37,14 +37,15 @@ body {
 
 }
 hr{
-    text-align: center;
     width: 5%;
     border-width: 2px;
+    margin-left: 50%;
 
 }
 .autor{
     color: white;
     text-align: center;
+    margin-left: 5%;
 }
 
 .hlavicka{
@@ -55,34 +56,167 @@ hr{
     height: 500px;
     margin-top: 0;
 }
-.box{
-    position: relative;
-    width: 70%;
-    margin-left: 21%;
-    border: 0.5px solid silver;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 
-                0 2px 2px rgba(0, 0, 0, .1), 
-                0 4px 4px rgba(0, 0, 0, .1), 
-                0 8px 8px rgba(0, 0, 0, .1);
-}
+
+
 
 /* MENU */
+.menu a{
+    display:block;
+    color: silver;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid silver;  
+         
+}
 
-
+.menu li{
+       list-style-type: none;
+      
+}
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    background-color: white;
+ 
+}
 
 
 /* OBSAH */
+
+
+
 .island1,
 .island2,
 .island3 {
-  width: 99.999%;
+  width: 100%;
 }
 
 
 
 /* FOTOGALERIE */
+.popisek{
+    color: white;
+    margin-top: -5%;
+    text-align: right;
+    margin-right: 3%;
+}
 
-
+.popisek a{
+    color: white;
+}
 
 
 /* PATICKA */
+
+/*sekce mobil*/
+
+@media (max-width:500px) {
+
+    .perex{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0;
+
+
+}
+}
+
+
+/*sekce tablet*/
+
+@media (min-width:501px) and (max-width:1000px) {
+
+
+}
+
+/*sekce pc*/
+
+@media (min-width:1001px) {
+    .perex{
+        margin-left: 31%;
+        margin-right: 27%;
+        margin-top: 0;
+
+         }
+
+
+    .box{
+        position: relative;
+        background-color: white;
+        width: 960px;
+        margin-left: 500px;
+        margin-top: -70px;
+        border: 0.5px solid silver;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1), 
+                    0 2px 2px rgba(0, 0, 0, .1), 
+                    0 4px 4px rgba(0, 0, 0, .1), 
+                    0 8px 8px rgba(0, 0, 0, .1);
+
+      }
+    
+     }
+     .uvod{
+        margin-left: 27%;
+        margin-right: 4%;
+        margin-top: 5%;
+        margin-bottom: 4%;
+    }
+    
+     .seznam{
+        max-width: 25%;
+        float: left;
+        margin-top: 2%;
+    }
+    .proc{
+        text-align: left;
+        margin-left: 4%;
+        margin-right: 27%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .nadpis1{
+        margin-bottom: 8%;
+    }
+
+    .videt,
+    .oddil{
+        text-align: left;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right:4% ;
+        margin-left: 27%;
+      }
+      .galerie{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+      }
+    .foto{
+        position: relative;
+        overflow: hidden;
+        width: 33.333%;
+    }
+
+      .foto img{
+        transition: 0.3s;
+        display: block;
+       
+    }
+    
+    .popis{
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      position: absolute;
+      margin: 0;
+      width: 100%;
+    }
+   
+
+   .foto:hover .popis{
+     transform: translateY(-100%);
+   }
+
+
