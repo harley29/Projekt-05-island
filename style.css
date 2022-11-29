@@ -19,10 +19,6 @@ body {
 
 
 /* HLAVICKA */
-.hlavicka{
-filter: brightness(90%);
-   
-}
 
 .titulek {
     font-family: 'Raleway', serif;
@@ -51,6 +47,9 @@ filter: brightness(90%);
 
 .hlavicka{
     background-image:url(images/island-hlavicka.jpg);
+    background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('images/island-hlavicka.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,6 +146,13 @@ h2{
         margin-left: 7%;
         margin-bottom: 10%;
     }
+    .popisek{
+        color: darkgray;
+        text-align: center;
+    }
+    .popisek a{
+        color: darkgray;
+    }
     .popis{
         text-align: center;
         font-size: 12px;
@@ -193,6 +199,20 @@ h2{
         display: block;
         width: 100%;
     }
+    .paticka{
+        background-color: rgb(211, 211, 211);
+        margin-top: -12px;
+        box-shadow:0px 15px 10px 0px rgba(0, 0, 0, .1) inset;
+        opacity: 0.4;
+        color: rgba(0, 0, 0, 0.911);
+        font-weight: bolder;
+        font-size: 10px;
+        
+    }
+    .paticka a{
+        color: rgba(0, 0, 0, 0.911);
+    
+    }
 
 }
 
@@ -203,11 +223,10 @@ h2{
 
     .hlavicka{
         height: 350px;
-        margin-left: 11%;
-        margin-right: 7%;
-        width: 90%;
+        width: 960px;
 
     }
+   
     h1{
         text-align: center;
     }
@@ -235,7 +254,7 @@ h2{
         position: relative;
         margin-top: 10px;
         margin-bottom: 13px;
-        margin-left: 43%;
+        margin-left: 44%;
         content:"  ";
         display: block;
         width: 110px;
